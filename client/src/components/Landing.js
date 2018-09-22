@@ -4,11 +4,12 @@ import Fade from 'react-reveal/Fade';
 import cheapImg from './img/cheap1.jpg';
 import simpleImg from './img/simple.jpg';
 import './Landing.css';
+
+console.log(Waypoint);
 class Landing extends React.Component {
   state = { show1: false, show2: false }
 
   _handleFirstWaypointEnter = () => {
-    console.log('Waypoint enters');
     this.setState({ show1: true });
   }
 
@@ -61,11 +62,11 @@ class Landing extends React.Component {
         <div className="newsletter">
           <span>Sign up for newsletter</span>
           <h5>Sign up to our mailing list to get the lastest updates and discounts.</h5>
-          <div class="input-field inline">
-            <input id="email_inline" type="email" class="validate" />
-            <label for="email_inline">Email</label>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
+          <div className="input-field inline">
+            <input id="email_inline" type="email" className="validate" />
+            <label htmlFor="email_inline">Email</label>
+            <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i className="material-icons right">send</i>
             </button>
           </div>
         </div>
@@ -78,10 +79,10 @@ class Landing extends React.Component {
             <p>+358 46 571 9108</p>
           </div>
           <div className="social">
-            <i class="fab fa-facebook-square fa-2x"></i>
-            <i class="fab fa-twitter-square fa-2x"></i>
-            <i class="fab fa-github-square fa-2x"></i>
-            <i class="fab fa-linkedin fa-2x"></i>
+            <i className="fab fa-facebook-square fa-2x"></i>
+            <i className="fab fa-twitter-square fa-2x"></i>
+            <i className="fab fa-github-square fa-2x"></i>
+            <i className="fab fa-linkedin fa-2x"></i>
           </div>
         </div>
       </div>
