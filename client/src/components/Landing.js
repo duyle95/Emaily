@@ -5,7 +5,6 @@ import cheapImg from './img/cheap1.jpg';
 import simpleImg from './img/simple.jpg';
 import './Landing.css';
 
-console.log(Waypoint);
 class Landing extends React.Component {
   state = { show1: false, show2: false }
 
@@ -23,7 +22,7 @@ class Landing extends React.Component {
         <div className="bg">
           <div className="centered">
             <span>EMAILY</span>
-            <h5>Cheap and simple collect customers' feedback with emails.</h5>
+            <h5>Inexpensive and simple collect customers' feedback with emails.</h5>
           </div>
         </div>
         
@@ -32,10 +31,12 @@ class Landing extends React.Component {
           <Waypoint
               onEnter={this._handleFirstWaypointEnter}
             >
+            <div className="feature-text">
               <Fade top duration={3000} when={this.state.show}>
                 <h1>CHEAP</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras erat nibh, accumsan non fermentum et, tempus ac tellus. Aliquam quam mi, suscipit at nisl consectetur, fermentum ullamcorper lorem. Fusce sed felis eros.</p>
               </Fade>
+            </div>
             </Waypoint>
             <img src={cheapImg} alt="cheap"/>
           </div>
@@ -45,10 +46,12 @@ class Landing extends React.Component {
             <Waypoint
               onEnter={this._handleSecondWaypointEnter}
             >
+            <div className="feature-text">
               <Fade top duration={3000} when={this.state.show}>
                 <h1>SIMPLE</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras erat nibh, accumsan non fermentum et, tempus ac tellus. Aliquam quam mi, suscipit at nisl consectetur, fermentum ullamcorper lorem. Fusce sed felis eros.</p>
               </Fade>
+            </div>
             </Waypoint>
           </div>
         </div>

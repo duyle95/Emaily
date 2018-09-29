@@ -67,8 +67,8 @@ body {
     height: 25em;
 }
 
-.feature span {
-    margin: 1em;
+.feature-text {
+    margin: 0.3em;
 }
 
 .newsletter {
